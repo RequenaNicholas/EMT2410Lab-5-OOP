@@ -77,10 +77,10 @@ int main() {
 	const int pin = 3;
 	int brightness = 5.7;
 
-	LED *GreenLED = new LED(pin);
+	LED *GreenLED = new LED(pin);  // LED pointer object called GreenLED on pin 3
 
-	GreenLED->TurnOn(pin, brightness);
-	delete (GreenLED);
+	GreenLED->TurnOn(pin, brightness); 
+	delete (GreenLED);		// Delete GreenLED to allocate memory
 
 	return 0;
 }
